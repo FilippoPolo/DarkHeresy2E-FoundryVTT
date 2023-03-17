@@ -7,7 +7,6 @@ export class MentalDisorderSheet extends DarkHeresyItemSheet {
       template: "systems/dark-heresy/template/sheet/mental-disorder.html",
       width: 500,
       height: 369,
-      resizable: false,
       tabs: [
         {
           navSelector: ".sheet-tabs",

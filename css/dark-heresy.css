@@ -398,20 +398,16 @@ li.folder.collapsed > .folder-header {
   margin-left: 8px;
 }
 .dark-heresy.mental-disorder .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.malignancy .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.mutation .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.talent .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.talent .stats {
   height: 165px;
@@ -431,8 +427,7 @@ li.folder.collapsed > .folder-header {
   width: 428px;
 }
 .dark-heresy.trait .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.trait .stats {
   height: 165px;
@@ -442,8 +437,7 @@ li.folder.collapsed > .folder-header {
   width: 428px;
 }
 .dark-heresy.special-ability .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.special-ability .stats {
   height: 165px;
@@ -453,8 +447,7 @@ li.folder.collapsed > .folder-header {
   width: 428px;
 }
 .dark-heresy.psychic-power .notes-editor {
-  height: 193px;
-  max-height: 193px;
+  min-height: 193px;
 }
 .dark-heresy.psychic-power .stats .stats-row .stat.prerequisite input {
   width: 10em;
@@ -510,8 +503,7 @@ li.folder.collapsed > .folder-header {
   width: 372px;
 }
 .dark-heresy.critical-injury .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.critical-injury .header .part,
 .dark-heresy.critical-injury .header .type {
@@ -522,8 +514,7 @@ li.folder.collapsed > .folder-header {
   margin: 0 8px;
 }
 .dark-heresy.weapon .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.weapon .stats .stats-row .stat.class select {
   width: 5em;
@@ -579,8 +570,7 @@ li.folder.collapsed > .folder-header {
   width: 29em;
 }
 .dark-heresy.armour .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.armour .stats .stats-row .stat.type input {
   width: 8em;
@@ -604,8 +594,7 @@ li.folder.collapsed > .folder-header {
   text-align: center;
 }
 .dark-heresy.gear .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.gear .stats {
   height: 165px;
@@ -625,8 +614,7 @@ li.folder.collapsed > .folder-header {
   width: 31em;
 }
 .dark-heresy.drug .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.drug .stats {
   height: 165px;
@@ -646,8 +634,7 @@ li.folder.collapsed > .folder-header {
   width: 31em;
 }
 .dark-heresy.tool .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.tool .stats {
   height: 165px;
@@ -667,8 +654,7 @@ li.folder.collapsed > .folder-header {
   width: 31em;
 }
 .dark-heresy.cybernetic .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.cybernetic .stats {
   height: 165px;
@@ -685,8 +671,7 @@ li.folder.collapsed > .folder-header {
   text-align: center;
 }
 .dark-heresy.weapon-modification .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.weapon-modification .stats {
   height: 165px;
@@ -706,8 +691,7 @@ li.folder.collapsed > .folder-header {
   width: 330px;
 }
 .dark-heresy.ammunition .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.ammunition .stats .stats-row .stat.weapon input {
   width: 26em;
@@ -746,8 +730,7 @@ li.folder.collapsed > .folder-header {
   width: 427px;
 }
 .dark-heresy.force-field .notes-editor {
-  height: 165px;
-  max-height: 165px;
+  min-height: 165px;
 }
 .dark-heresy.force-field .stats {
   height: 165px;
@@ -813,6 +796,7 @@ li.folder.collapsed > .folder-header {
 .dark-heresy h1 {
   width: 100%;
   height: 24px;
+  max-height: 24px;
   border: 0 none;
   border-radius: 3px;
   font-family: var(--font-text);
@@ -932,6 +916,18 @@ li.folder.collapsed > .folder-header {
   width: 20px;
   margin-right: 5px;
 }
+.dark-heresy.sheet form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.dark-heresy.sheet form .header {
+  flex: 0;
+}
+.dark-heresy.sheet form .sheet-tabs {
+  flex: 0;
+}
 .dark-heresy.sheet .header input,
 .dark-heresy.sheet .header span {
   flex-grow: 1;
@@ -964,11 +960,20 @@ li.folder.collapsed > .folder-header {
   box-shadow: 0 0 10px var(--color-highlight);
   cursor: pointer;
 }
+.dark-heresy.sheet .notes-tab {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .dark-heresy.sheet .notes-editor {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-basis: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  height: 100%;
+}
+.dark-heresy.sheet .notes-editor > div {
+  flex-grow: 1;
 }
 .dark-heresy .acolyte {
   display: flex;
@@ -2009,12 +2014,13 @@ li.folder.collapsed > .folder-header {
 .dark-heresy .notes-tab .notes-editor {
   margin-top: 2px;
   height: 476px;
+  width: 100%;
+  flex-grow: 1;
 }
 .dark-heresy .notes-tab .information {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex-basis: 100%;
 }
 .dark-heresy .notes-tab .information .information-row {
   align-items: baseline;

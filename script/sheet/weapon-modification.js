@@ -7,7 +7,6 @@ export class WeaponModificationSheet extends DarkHeresyItemSheet {
       template: "systems/dark-heresy/template/sheet/weapon-modification.html",
       width: 500,
       height: 369,
-      resizable: false,
       tabs: [
         {
           navSelector: ".sheet-tabs",

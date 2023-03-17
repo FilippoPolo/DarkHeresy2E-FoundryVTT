@@ -911,6 +911,8 @@
       ],
       "experience": {
         "value": 0
+      }, "bio": {
+        "notes": ""
       },
       "faction": "",
       "subfaction": "",
