@@ -7,7 +7,6 @@ export class TraitSheet extends DarkHeresyItemSheet {
       template: "systems/dark-heresy/template/sheet/trait.html",
       width: 500,
       height: 369,
-      resizable: false,
       tabs: [
         {
           navSelector: ".sheet-tabs",

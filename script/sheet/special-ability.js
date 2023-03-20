@@ -7,7 +7,6 @@ export class SpecialAbilitySheet extends DarkHeresyItemSheet {
       template: "systems/dark-heresy/template/sheet/special-ability.html",
       width: 500,
       height: 369,
-      resizable: false,
       tabs: [
         {
           navSelector: ".sheet-tabs",

@@ -7,7 +7,6 @@ export class GearSheet extends DarkHeresyItemSheet {
       template: "systems/dark-heresy/template/sheet/gear.html",
       width: 500,
       height: 369,
-      resizable: false,
       tabs: [
         {
           navSelector: ".sheet-tabs",
