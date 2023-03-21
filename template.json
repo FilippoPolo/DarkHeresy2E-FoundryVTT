@@ -379,6 +379,12 @@
                 "starter": false,
                 "cost": 0
               },
+              "haarlock": {
+                "label": "Haarlock",
+                "advance": -20,
+                "starter": false,
+                "cost": 0
+              },
               "heresy": {
                 "label": "Heresy",
                 "advance": -20,
