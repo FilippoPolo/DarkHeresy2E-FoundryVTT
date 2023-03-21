@@ -433,77 +433,81 @@ li.folder.collapsed > .folder-header {
   min-height: 165px;
 }
 .dark-heresy.trait .stats {
-  height: 165px;
+  height: 100%;
   align-content: baseline;
 }
-.dark-heresy.trait .stats .stats-row .stat.benefit input {
-  width: 428px;
+.dark-heresy.trait .stats .stats-row .stat.benefit {
+  flex-basis: 100%;
 }
 .dark-heresy.special-ability .notes-editor {
   min-height: 165px;
 }
 .dark-heresy.special-ability .stats {
-  height: 165px;
+  height: 100%;
   align-content: baseline;
 }
-.dark-heresy.special-ability .stats .stats-row .stat.benefit input {
-  width: 428px;
+.dark-heresy.special-ability .stats .stats-row .stat.benefit {
+  flex-basis: 100%;
 }
 .dark-heresy.psychic-power .notes-editor {
   min-height: 193px;
 }
-.dark-heresy.psychic-power .stats .stats-row .stat.prerequisite input {
-  width: 10em;
+.dark-heresy.psychic-power .stats {
+  height: 100%;
+  align-content: baseline;
 }
-.dark-heresy.psychic-power .stats .stats-row .stat.action input {
-  width: 6em;
-  text-align: center;
+.dark-heresy.psychic-power .stats .stats-row .stat.prerequisite {
+  flex-basis: 35%;
+}
+.dark-heresy.psychic-power .stats .stats-row .stat.action {
+  flex-basis: 30%;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.dark-heresy.psychic-power .stats .stats-row .stat.subtype {
+  flex-basis: 35%;
+}
+.dark-heresy.psychic-power .stats .stats-row .stat.focus-power {
+  flex-basis: 40%;
 }
 .dark-heresy.psychic-power .stats .stats-row .stat.focus-power input[type="number"] {
-  width: 2em;
-  text-align: center;
+  flex-basis: 20%;
+  margin-right: 3px;
 }
 .dark-heresy.psychic-power .stats .stats-row .stat.focus-power input[type="text"] {
-  width: 8em;
-  text-align: center;
+  flex-basis: 80%;
 }
-.dark-heresy.psychic-power .stats .stats-row .stat.range input {
-  width: 4em;
-  text-align: center;
+.dark-heresy.psychic-power .stats .stats-row .stat.range {
+  flex-basis: 20%;
+  margin-left: 30px;
+  margin-right: 30px;
 }
-.dark-heresy.psychic-power .stats .stats-row .stat.sustained input {
-  width: 6em;
-  text-align: center;
+.dark-heresy.psychic-power .stats .stats-row .stat.sustained {
+  flex-basis: 40%;
 }
-.dark-heresy.psychic-power .stats .stats-row .stat.subtype input {
-  width: 9em;
-  text-align: center;
+.dark-heresy.psychic-power .stats .stats-row .stat.damage {
+  flex-basis: 40%;
 }
 .dark-heresy.psychic-power .stats .stats-row .stat.damage input {
-  width: 5em;
-  text-align: center;
+  flex-basis: 50%;
 }
 .dark-heresy.psychic-power .stats .stats-row .stat.damage select {
-  width: 6em;
+  flex-basis: 50%;
   margin-left: 2px;
 }
-.dark-heresy.psychic-power .stats .stats-row .stat.penetration input {
-  width: 4em;
-  text-align: center;
+.dark-heresy.psychic-power .stats .stats-row .stat.penetration {
+  flex-basis: 20%;
+  margin-left: 30px;
+  margin-right: 30px;
 }
-.dark-heresy.psychic-power .stats .stats-row .stat.rate-of-fire input {
-  width: 2em;
-  text-align: center;
-  margin: 0 2px;
+.dark-heresy.psychic-power .stats .stats-row .stat.zone {
+  flex-basis: 40%;
 }
-.dark-heresy.psychic-power .stats .stats-row .stat.zone select {
-  width: 8em;
+.dark-heresy.psychic-power .stats .stats-row .stat.special {
+  flex-basis: 100%;
 }
-.dark-heresy.psychic-power .stats .stats-row .stat.special input {
-  width: 427px;
-}
-.dark-heresy.psychic-power .stats .stats-row .stat.short-description input {
-  width: 372px;
+.dark-heresy.psychic-power .stats .stats-row .stat.short-description {
+  flex-basis: 100%;
 }
 .dark-heresy.critical-injury .notes-editor {
   min-height: 165px;
@@ -519,58 +523,75 @@ li.folder.collapsed > .folder-header {
 .dark-heresy.weapon .notes-editor {
   min-height: 165px;
 }
-.dark-heresy.weapon .stats .stats-row .stat.class select {
-  width: 5em;
+.dark-heresy.weapon .stats {
+  height: 100%;
+  align-content: baseline;
+}
+.dark-heresy.weapon .stats .stats-row .stat.class {
+  flex-basis: 27%;
+}
+.dark-heresy.weapon .stats .stats-row .stat.type {
+  flex-basis: 18%;
 }
 .dark-heresy.weapon .stats .stats-row .stat.type select {
-  width: 5em;
-}
-.dark-heresy.weapon .stats .stats-row .stat.range input {
-  width: 4em;
-  text-align: center;
-}
-.dark-heresy.weapon .stats .stats-row .stat.reload input {
-  width: 6em;
-  text-align: center;
-}
-.dark-heresy.weapon .stats .stats-row .stat.clip input {
-  width: 2em;
-  text-align: center;
-  margin: 0 2px;
-}
-.dark-heresy.weapon .stats .stats-row .stat.damage input {
-  width: 5em;
-  text-align: center;
-}
-.dark-heresy.weapon .stats .stats-row .stat.damage select {
-  width: 6em;
+  flex-basis: 18%;
   margin-left: 2px;
 }
-.dark-heresy.weapon .stats .stats-row .stat.penetration input {
-  width: 4em;
-  text-align: center;
+.dark-heresy.weapon .stats .stats-row .stat.range {
+  flex-basis: 15%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.dark-heresy.weapon .stats .stats-row .stat.rate-of-fire input {
-  width: 2em;
-  text-align: center;
+.dark-heresy.weapon .stats .stats-row .stat.reload {
+  flex-basis: 20%;
+  margin-right: 30px;
+}
+.dark-heresy.weapon .stats .stats-row .stat.clip {
+  flex-basis: 20%;
+}
+.dark-heresy.weapon .stats .stats-row .stat.clip input {
+  flex-basis: 50%;
   margin: 0 2px;
 }
-.dark-heresy.weapon .stats .stats-row .stat.craftsmanship select {
-  width: 8em;
+.dark-heresy.weapon .stats .stats-row .stat.damage {
+  flex-basis: 45%;
 }
-.dark-heresy.weapon .stats .stats-row .stat.availability select {
-  width: 8em;
+.dark-heresy.weapon .stats .stats-row .stat.damage input {
+  flex-basis: 45%;
 }
-.dark-heresy.weapon .stats .stats-row .stat.weight input {
-  width: 2em;
-  text-align: center;
+.dark-heresy.weapon .stats .stats-row .stat.damage select {
+  flex-basis: 55%;
+  margin-left: 2px;
 }
-.dark-heresy.weapon .stats .stats-row .stat.attack input {
-  width: 2em;
-  text-align: center;
+.dark-heresy.weapon .stats .stats-row .stat.penetration {
+  flex-basis: 15%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.dark-heresy.weapon .stats .stats-row .stat.special input {
-  width: 29em;
+.dark-heresy.weapon .stats .stats-row .stat.rate-of-fire {
+  flex-basis: 40%;
+}
+.dark-heresy.weapon .stats .stats-row .stat.rate-of-fire input {
+  flex-basis: 33%;
+  margin: 0 2px;
+}
+.dark-heresy.weapon .stats .stats-row .stat.craftsmanship {
+  flex-basis: 40%;
+}
+.dark-heresy.weapon .stats .stats-row .stat.availability {
+  flex-basis: 40%;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.dark-heresy.weapon .stats .stats-row .stat.weight {
+  flex-basis: 20%;
+}
+.dark-heresy.weapon .stats .stats-row .stat.special {
+  flex-basis: 80%;
+}
+.dark-heresy.weapon .stats .stats-row .stat.attack {
+  flex-basis: 20%;
+  margin-left: 30px;
 }
 .dark-heresy.armour .notes-editor {
   min-height: 165px;
@@ -668,21 +689,22 @@ li.folder.collapsed > .folder-header {
   min-height: 165px;
 }
 .dark-heresy.tool .stats {
-  height: 165px;
+  height: 100%;
   align-content: baseline;
 }
-.dark-heresy.tool .stats .stats-row .stat.craftsmanship select {
-  width: 8em;
+.dark-heresy.tool .stats .stats-row .stat.craftsmanship {
+  flex-basis: 40%;
 }
-.dark-heresy.tool .stats .stats-row .stat.availability select {
-  width: 8em;
+.dark-heresy.tool .stats .stats-row .stat.availability {
+  flex-basis: 40%;
+  margin-left: 30px;
+  margin-right: 30px;
 }
-.dark-heresy.tool .stats .stats-row .stat.weight input {
-  width: 2em;
-  text-align: center;
+.dark-heresy.tool .stats .stats-row .stat.weight {
+  flex-basis: 20%;
 }
-.dark-heresy.tool .stats .stats-row .stat.short-description input {
-  width: 31em;
+.dark-heresy.tool .stats .stats-row .stat.short-description {
+  flex-basis: 100%;
 }
 .dark-heresy.cybernetic .notes-editor {
   min-height: 165px;
@@ -706,21 +728,23 @@ li.folder.collapsed > .folder-header {
   min-height: 165px;
 }
 .dark-heresy.weapon-modification .stats {
-  height: 165px;
+  height: 100%;
   align-content: baseline;
 }
-.dark-heresy.weapon-modification .stats .stats-row .stat.craftsmanship select {
-  width: 8em;
+.dark-heresy.weapon-modification .stats .stats-row .stat.craftsmanship {
+  flex-basis: 40%;
 }
-.dark-heresy.weapon-modification .stats .stats-row .stat.availability select {
-  width: 8em;
+.dark-heresy.weapon-modification .stats .stats-row .stat.availability {
+  flex-basis: 40%;
+  margin-left: 30px;
+  margin-right: 30px;
 }
-.dark-heresy.weapon-modification .stats .stats-row .stat.weight input {
-  width: 2em;
-  text-align: center;
+.dark-heresy.weapon-modification .stats .stats-row .stat.weight {
+  flex-basis: 20%;
 }
-.dark-heresy.weapon-modification .stats .stats-row .stat.upgrades input {
-  width: 330px;
+.dark-heresy.weapon-modification .stats .stats-row .stat.upgrades {
+  flex-basis: 100%;
+  margin-right: 30px;
 }
 .dark-heresy.ammunition .notes-editor {
   min-height: 165px;
