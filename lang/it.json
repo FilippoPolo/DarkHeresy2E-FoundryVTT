@@ -93,7 +93,7 @@
   "BIO.TYPE": "Tipo",
   "BIO.FACTION": "Fazione",
   "BIO.SUBFACTION": "Sottofazione",
-  "BIO.THREAT_LEVEL": "Grado di Minaccia",
+  "BIO.THREAT_LEVEL": "Minaccia",
 
   "BUTTON.POST_ITEM": "Mostra Oggetto",
   "BUTTON.ROLL": "Tira",
@@ -104,7 +104,7 @@
   "ENCUMBRANCE.MAX": "Max",
   "ENCUMBRANCE.CURRENT": "Corrente",
 
-  "CHARACTERISTIC.WEAPON_SKILL": "Abilità Combattimento",
+  "CHARACTERISTIC.WEAPON_SKILL": "Abilità Combatt.",
   "CHARACTERISTIC.BALLISTIC_SKILL": "Abiltà Balistica",
   "CHARACTERISTIC.STRENGTH": "Forza",
   "CHARACTERISTIC.TOUGHNESS": "Resistenza",
@@ -204,7 +204,7 @@
   "EXPERIENCE.TOTAL": "Totali",
 
   "FATE": "Fato",
-  "FATIGUE": "Affaticamento",
+  "FATIGUE": "Fatica",
 
   "FEAR.HEADER": "Paura",
 
@@ -338,12 +338,12 @@
   "SPECIAL_ABILITY.NAME": "Nome",
   "SPECIAL_ABILITY.BENEFIT": "Beneficio",
 
-  "TAB.STATS": "STATISTICHE",
-  "TAB.COMBAT": "COMBATTIMENTO",
+  "TAB.STATS": "STAT",
+  "TAB.COMBAT": "COMBAT",
   "TAB.ABILITIES": "ABILITÀ",
-  "TAB.PSYCHIC_POWERS": "PSIONICA",
-  "TAB.GEAR": "EQUIPAGGIAMENTO",
-  "TAB.ADVANCES": "AVANZAMENTI",
+  "TAB.PSYCHIC_POWERS": "PSI",
+  "TAB.GEAR": "EQUIP",
+  "TAB.ADVANCES": "PROGRESSO",
   "TAB.NOTES": "NOTE",
   "TAB.DATA": "DATI",
   "TAB.EFFECT": "EFFETTI",
