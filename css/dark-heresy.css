@@ -825,7 +825,7 @@ li.folder.collapsed > .folder-header {
   width: 100%;
 }
 .dark-heresy .sheet-body {
-  overflow: hidden;
+  overflow: auto;
   flex-grow: 1;
 }
 .dark-heresy .editor,
@@ -1602,6 +1602,7 @@ li.folder.collapsed > .folder-header {
   display: flex;
   flex-direction: column;
   margin-left: 2px;
+  flex-basis: 46%;
 }
 .dark-heresy .abilities .item-list .header {
   margin-top: 5px;
@@ -1714,14 +1715,15 @@ li.folder.collapsed > .folder-header {
 .dark-heresy .psychic .psychic-powers .item-list .items {
   min-height: 200px;
 }
-.dark-heresy .gear {
+.dark-heresy .flex.container.gear {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .dark-heresy .gear .encumbrance {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex-basis: 100%;
 }
 .dark-heresy .gear .encumbrance .information {
   display: flex;
@@ -1850,6 +1852,20 @@ li.folder.collapsed > .folder-header {
 }
 .dark-heresy .progression {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.dark-heresy .progression:nth-child(2) {
+  overflow: hidden;
+  min-height: 400px;
+}
+.dark-heresy .progression .progression {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.dark-heresy .progression .progression .column {
+  flex-basis: 55%;
 }
 .dark-heresy .progression .aptitudes {
   display: flex;
@@ -1958,10 +1974,10 @@ li.folder.collapsed > .folder-header {
   margin-top: 5px;
 }
 .dark-heresy .progression .characteristics .item-list .header .name {
-  flex-basis: 29%;
+  flex-basis: 32%;
 }
 .dark-heresy .progression .characteristics .item-list .header .advance {
-  flex-basis: 25%;
+  flex-basis: 27%;
   margin-right: 5px;
 }
 .dark-heresy .progression .characteristics .item-list .header .unnatural {
@@ -1975,19 +1991,20 @@ li.folder.collapsed > .folder-header {
 .dark-heresy .progression .characteristics .item-list .header .cost {
   flex-basis: 15%;
   margin-left: 5px;
+  flex-basis: 27%;
 }
 .dark-heresy .progression .characteristics .item-list .items {
   max-height: 157px;
   height: 157px;
 }
 .dark-heresy .progression .characteristics .item-list .items .item .name {
-  flex-basis: 30%;
+  flex-basis: 32%;
   font-size: 20px;
   text-align: center;
   font-weight: bold;
 }
 .dark-heresy .progression .characteristics .item-list .items .item .advance {
-  flex-basis: 25%;
+  flex-basis: 27%;
   text-align: center;
   height: 22px;
   margin-right: 5px;
@@ -1997,15 +2014,17 @@ li.folder.collapsed > .folder-header {
   height: 24px;
   width: 40px;
   margin: 1px;
+  flex-basis: 13%;
 }
 .dark-heresy .progression .characteristics .item-list .items .item .base {
   font-size: 12px;
   height: 24px;
   width: 40px;
   margin: 1px;
+  flex-basis: 11%;
 }
 .dark-heresy .progression .characteristics .item-list .items .item .cost {
-  flex-basis: 15%;
+  flex-basis: 27%;
   text-align: center;
   height: 22px;
   margin-left: 5px;
@@ -2017,6 +2036,7 @@ li.folder.collapsed > .folder-header {
   align-items: center;
   margin-right: 1px;
   margin-top: 2px;
+  flex-basis: 100%;
 }
 .dark-heresy .progression .psychic-powers .header {
   margin-top: 5px;
@@ -2058,8 +2078,7 @@ li.folder.collapsed > .folder-header {
   width: 100%;
 }
 .dark-heresy .progression .psychic-powers .item-list .items {
-  max-height: 107px;
-  height: 107px;
+  min-height: 70px;
 }
 .dark-heresy .progression .psychic-powers .item-list .items .item .psychic-powers-row {
   flex-basis: 64%;
@@ -2072,8 +2091,7 @@ li.folder.collapsed > .folder-header {
 .dark-heresy .progression .skills {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  flex-basis: calc(50% - 1px);
+  flex-basis: 45%;
   margin-left: 1px;
   margin-top: 2px;
 }
@@ -2081,32 +2099,31 @@ li.folder.collapsed > .folder-header {
   margin-top: 5px;
 }
 .dark-heresy .progression .skills .item-list .header .name {
-  flex-basis: 40%;
+  flex-basis: 43%;
 }
 .dark-heresy .progression .skills .item-list .header .advance {
-  flex-basis: 25%;
+  flex-basis: 27%;
   margin-right: 5px;
 }
 .dark-heresy .progression .skills .item-list .header .total {
-  flex-basis: 11%;
+  flex-basis: 13%;
   margin: 1px;
 }
 .dark-heresy .progression .skills .item-list .header .cost {
-  flex-basis: 15%;
+  flex-basis: 17%;
   margin-left: 5px;
 }
 .dark-heresy .progression .skills .item-list .items {
-  max-height: 382px;
-  height: 382px;
+  min-height: 200px;
 }
 .dark-heresy .progression .skills .item-list .items .item .name {
-  flex-basis: 40%;
+  flex-basis: 43%;
   font-size: 20px;
   text-align: center;
   font-weight: bold;
 }
 .dark-heresy .progression .skills .item-list .items .item .advance {
-  flex-basis: 25%;
+  flex-basis: 27%;
   text-align: center;
   height: 22px;
   margin-right: 5px;
@@ -2116,9 +2133,10 @@ li.folder.collapsed > .folder-header {
   height: 24px;
   width: 40px;
   margin: 1px;
+  flex-basis: 13%;
 }
 .dark-heresy .progression .skills .item-list .items .item .cost {
-  flex-basis: 15%;
+  flex-basis: 17%;
   text-align: center;
   height: 22px;
   margin-left: 5px;
