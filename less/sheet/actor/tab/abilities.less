@@ -1,3 +1,35 @@
+.dark-heresy .abilities {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+    flex-basis: 46%;
+}
+
+.dark-heresy .abilities .item-list .header {
+    margin-top: 5px;
+}
+
+.dark-heresy .abilities .item-list .name {
+    flex-basis: 20%;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.dark-heresy .abilities .item-list .benefit {
+    flex-basis: 80%;
+    text-align: center;
+}
+
+.dark-heresy .abilities .item-list .items .ability {
+    width: 100%;
+}
+
+.dark-heresy .abilities .item-list .items  {
+    min-height: 140px;
+}
+
 .dark-heresy .abilities .talents,
 .dark-heresy .abilities .traits,
 .dark-heresy .abilities .special-abilities {
@@ -10,6 +42,17 @@
 
 .dark-heresy .abilities .talents {
     margin-top: 0;
+    flex-basis: 40%;
+}
+
+.dark-heresy .abilities .traits {
+    margin-top: 0;
+    flex-basis: 30%;
+}
+
+.dark-heresy .abilities .special-abilities {
+    margin-top: 0;
+    flex-basis: 30%;
 }
 
 .dark-heresy .abilities .talents .item-list .header,
@@ -48,16 +91,13 @@
 }
 
 .dark-heresy .abilities .talents .item-list .items  {
-    max-height: 202px;
-    height: 202px;
+    min-height: 120px;
 }
 
 .dark-heresy .abilities .traits .item-list .items {
-    max-height: 175px;
-    height: 175px;
+    min-height: 80px;
 }
 
 .dark-heresy .abilities .special-abilities .item-list .items {
-    max-height: 100px;
-    height: 100px;
+    min-height: 80px;
 }

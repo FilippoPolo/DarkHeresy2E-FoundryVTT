@@ -1,3 +1,16 @@
+.dark-heresy .combat {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.dark-heresy .combat .combat {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
 .dark-heresy .combat .wounds {
     display: flex;
     flex-direction: column;
@@ -56,7 +69,8 @@
     flex-wrap: wrap;
     flex-basis: calc(45% - 4px);
     align-items: center;
-    margin: 0 2px
+    margin: 0 2px;
+    align-content: baseline;
 }
 
 .dark-heresy .combat .armour .armour-row {
@@ -107,7 +121,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     flex-basis: 25%;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .dark-heresy .combat .movement .information {
@@ -116,7 +130,9 @@
 }
 
 .dark-heresy .combat .movement .information label {
-    flex-basis: 75%;
+    flex-basis: 50%;
+    text-align: right;
+    margin-right: 5px;
 }
 
 .dark-heresy .combat .movement .information input {
@@ -137,7 +153,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 2px;
-    flex-basis: 100%;
+    flex-basis: 50%;
 }
 
 .dark-heresy .combat .weapons .item-list .header {
@@ -200,8 +216,7 @@
 }
 
 .dark-heresy .combat .weapons .item-list .items {
-    max-height: 100px;
-    height: 100px;
+    min-height: 40px;
 }
 
 .dark-heresy .combat .psychic-powers {
@@ -209,7 +224,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 2px;
-    flex-basis: 100%;
+    flex-basis: 50%;
 }
 
 .dark-heresy .combat .psychic-powers .information {
@@ -301,6 +316,5 @@
 }
 
 .dark-heresy .combat .psychic-powers .item-list .items {
-    max-height: 141px;
-    height: 141px;
+    min-height: 40px;
 }

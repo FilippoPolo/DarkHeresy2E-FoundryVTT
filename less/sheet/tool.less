@@ -3,23 +3,24 @@
 }
 
 .dark-heresy.tool .stats {
-    height: 165px;
+    height: 100%;
     align-content: baseline;
 }
 
-.dark-heresy.tool .stats .stats-row .stat.craftsmanship select {
-    width: 8em;
+.dark-heresy.tool .stats .stats-row .stat.craftsmanship {
+    flex-basis: 40%;
 }
 
-.dark-heresy.tool .stats .stats-row .stat.availability select {
-    width: 8em;
+.dark-heresy.tool .stats .stats-row .stat.availability {
+    flex-basis: 40%;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-.dark-heresy.tool .stats .stats-row .stat.weight input {
-    width: 2em;
-    text-align: center;
+.dark-heresy.tool .stats .stats-row .stat.weight {
+    flex-basis: 20%;
 }
 
-.dark-heresy.tool .stats .stats-row .stat.short-description input {
-    width: 31em;
+.dark-heresy.tool .stats .stats-row .stat.short-description {
+    flex-basis: 100%;
 }

@@ -1,3 +1,19 @@
+.dark-heresy .acolyte .flex.stats {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.dark-heresy .acolyte .flex.stats .flex.stats {
+    display: flex;
+    flex-direction: row;
+}
+
+.dark-heresy .acolyte .characteristics {
+    align-content: baseline;
+}
+
 .dark-heresy .stats .insanities {
     display: flex;
     flex-direction: column;
@@ -83,15 +99,17 @@
 }
 
 .dark-heresy .stats .characteristics .characteristic .name {
-    flex-basis: 64%;
+    flex-basis: 100%;
     font-size: 20px;
     text-align: center;
+    max-height: 50px;
 }
 
 .dark-heresy .stats .characteristics .characteristic .total {
     font-size: 24px;
     height: 50px;
     width: 50px;
+    min-width: 50px;
     margin: 1px;
 }
 

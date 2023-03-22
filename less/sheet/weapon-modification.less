@@ -3,23 +3,25 @@
 }
 
 .dark-heresy.weapon-modification .stats {
-    height: 165px;
+    height: 100%;
     align-content: baseline;
 }
 
-.dark-heresy.weapon-modification .stats .stats-row .stat.craftsmanship select {
-    width: 8em;
+.dark-heresy.weapon-modification .stats .stats-row .stat.craftsmanship {
+    flex-basis: 40%;
 }
 
-.dark-heresy.weapon-modification .stats .stats-row .stat.availability select {
-    width: 8em;
+.dark-heresy.weapon-modification .stats .stats-row .stat.availability {
+    flex-basis: 40%;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-.dark-heresy.weapon-modification .stats .stats-row .stat.weight input {
-    width: 2em;
-    text-align: center;
+.dark-heresy.weapon-modification .stats .stats-row .stat.weight {
+    flex-basis: 20%;
 }
 
-.dark-heresy.weapon-modification .stats .stats-row .stat.upgrades input {
-    width: 330px;
+.dark-heresy.weapon-modification .stats .stats-row .stat.upgrades {
+    flex-basis: 100%;
+    margin-right: 30px;
 }
